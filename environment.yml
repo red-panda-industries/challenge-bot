@@ -1,0 +1,9 @@
+name: challenge-bot
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - discord.py
+  - aiosqlite
+  - aiohttp
