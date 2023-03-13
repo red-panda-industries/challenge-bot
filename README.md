@@ -3,18 +3,13 @@
 The **Red Panda Challenge Discord Bot**, or **`rpc-bot`** for short, is the robotic minister of the **Red Panda Challenge** (**RPC**). The good robot communicates with our plane of existence via the portal known as [Discord](https://discord.com/). The `rpc-bot` is the first robot to be minted by the emerging and powerful [Red Panda Industries](https://github.com/red-panda-industries).
 
 <figure>
-  <img alt="Preacherbot from Futurama" src="images/preacherbot.png">
+  <img alt="Preacherbot from Futurama" src="images/preacherbot.png" height=200 width=200>
   <figcaption>Figure&nbsp;1: A robotic minister</figcaption>
 </figure>
 
 ## The Red Panda Challenge
 
 The RPC is a daily exercise challenge with multiple activities and levels.
-
-<figure>
-  <img alt="AI artwork of a cartoon red fox in a hockey arena, wearing a large medal, looking at the viewer, with his arms crossed" src="images/hockey-fox.jpg" height="400" width="400">
-  <figcaption>Figure&nbsp;2: Red Panda Challenge participant</figcaption>
-</figure>
 
 Currently, the `rpc-bot` has limited functionality. This project is in early stages of development.
 
