@@ -17,6 +17,17 @@ The **Red Panda Challenge** (**RPC**) is a daily exercise challenge with multipl
 
 Currently, the `rpc-bot` has limited functionality. This project is in early stages of development.
 
+## Available commands
+
+| Command | Description |
+| --- | --- |
+| `/help` | List available commands. |
+| `/randomfact` | Get a random fact. |
+| `/coinflip` | Make a coin flip, but give your bet before. |
+| `/rps` | Play the rock paper scissors game against the bot. |
+| `/ping` | Check if the bot is alive. |
+| `/botinfo` | Get some information about the bot. |
+
 ## Setting up the bot
 
 To run the bot yourself, first download or clone this repository.
@@ -59,7 +70,7 @@ Figure&nbsp;2: `config.json` example
 
 </figure>
 
-**Note: Never publish your `config.json` file or any secrets unencrypted.**
+**Note: Never publish your unencrypted `config.json` file or any secrets anywhere public.**
 
 To obtain values for `application_id` and `token`, you must create an **application** and a corresponding **bot** on the [Discord Developer Portal](https://discord.com/developers/applications).
 
