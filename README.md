@@ -19,9 +19,9 @@ Currently, the `rpc-bot` has limited functionality. This project is in early sta
 
 ## Setting up the bot configuration
 
-After obtaining a copy of this repository, you must create a working configuration file.
+After obtaining a copy of this repository, you must update the configuration file.
 
-If you are a contributor to this repository, unlock the existing encrypted configuration file with [git-crypt](https://www.agwa.name/projects/git-crypt/), using this command:
+If you are a contributor to this repository, unlock the encrypted configuration file with [git-crypt](https://www.agwa.name/projects/git-crypt/), using this command:
 
 ```bash
 git-crypt unlock config.json
