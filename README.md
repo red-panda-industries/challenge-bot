@@ -110,5 +110,5 @@ python bot.py
 This project is licensed under the Apache License, version&nbsp;2.0. See the [LICENSE.md](LICENSE.md) file for details.
 
 &copy; 2021 Krypton <br>
-&copy; 2023 Jack Willis <br>
+&copy; 2023 Jackson Willis <br>
 &copy; 2023 multiusersystem
