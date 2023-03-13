@@ -6,15 +6,13 @@ The RPC is a daily exercise challenge with multiple activities and levels.
 
 Currently, the `rpc-bot` has limited functionality. This project is in early stages of development.
 
-## Setting up the bot
+## Setting up the bot configuration
 
 After cloning the repository, you must create a working `config.json` file.
 
 If you are an editor of this repository, unlock the encrypted file with <code>[git-crypt](https://www.agwa.name/projects/git-crypt/) unlock config.json</code>.
 
-If you are creating your own bot instance, you need to create your own `config.json` file, which should look like this:
-
-<figure>
+If you are creating your own bot instance, you need to delete the encrypted `config.json` file in this repository and create your own. It should look like this:
 
 ```json
 {
@@ -30,10 +28,9 @@ If you are creating your own bot instance, you need to create your own `config.j
 }
 ```
 
-<figcaption>
-Example content for <code>config.json</code>
-</figcaption>
-</figure>
+To obtain values for `application_id` and `token`, you must create an **application** and a corresponding **bot** on the [Discord Developer Portal](https://discord.com/developers/applications).
+
+To obtain your user ID, see &ldquo;[How to find your unique Discord ID](http://web.archive.org/web/20230313045358/https://www.businessinsider.com/guides/tech/discord-id).&rdquo;
 
 <table>
   <caption>Required entries in <code>config.json</code></caption>
@@ -70,11 +67,7 @@ Example content for <code>config.json</code>
   </tbody>
 </table>
 
-To obtain values for `application_id` and `token`, you must create an **application** and a corresponding **bot** on the [Discord Developer Portal](https://discord.com/developers/applications).
-
-To obtain your user ID, see "[How to find your unique Discord ID](http://web.archive.org/web/20230313045358/https://www.businessinsider.com/guides/tech/discord-id)".
-
-Invite your bot onto your server by following this invite link in your browser (replacing `YOUR_APPLICATION_ID_HERE` with the application ID):
+Finally, invite your bot onto your server by following this invite link in your browser (replacing `YOUR_APPLICATION_ID_HERE` with the application ID):
 
 ```
 https://discord.com/oauth2/authorize?scope=bot+applications.commands&permissions=36574522433&client_id=YOUR_APPLICATION_ID_HERE
@@ -82,7 +75,9 @@ https://discord.com/oauth2/authorize?scope=bot+applications.commands&permissions
 
 ## Installation
 
-**Using Conda (recommended):**
+Python 3.9 or later is required.
+
+### Using Conda (recommended)
 
 Install dependencies and create the `challenge-bot` environment:
 
@@ -96,7 +91,7 @@ Then activate the environment:
 conda activate challenge-bot
 ```
 
-**Using Pip**
+### Using Pip
 
 Install dependencies:
 
