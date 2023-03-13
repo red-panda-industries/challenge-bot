@@ -20,7 +20,19 @@ Here is an explanation of what everything is:
 
 To start the bot you simply need to launch, either your terminal (Linux, Mac, or Windows), or your Command Prompt (Windows).
 
-Before running the bot you will need to install all the requirements with this command:
+Before running the bot you will need to install all the requirements using conda:
+
+```
+conda env create -f environment.yml
+```
+
+Then to activate the environment:
+
+```
+conda activate challenge-bot
+```
+
+Or, install the packages via pip:
 
 ```
 python -m pip install -r requirements.txt
