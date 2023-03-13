@@ -111,7 +111,7 @@ To run the bot, you need **[Python](https://www.python.org/)** and a few package
 
 Python versions **3.10 and&nbsp;greater** are supported.
 
-The packages can be installed through **[conda](https://docs.conda.io/en/latest/)** or **[pip](https://pypi.org/project/pip/)**.
+The packages can be installed through the **[conda](https://docs.conda.io/en/latest/)** environment manager or the **[pip](https://pypi.org/project/pip/)** package manager that comes pre-installed with Python.
 
 ### Using Conda
 
