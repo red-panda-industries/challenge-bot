@@ -1,13 +1,12 @@
 # Red Panda Challenge Discord Bot
 
-## How to set up
+## Configuration
 
-To set up the bot I made it as simple as possible. I now created a [config.json](config.json) file where you can put the
-needed things to edit.
+Uses `git-crypt`.
 
-Here is an explanation of what everything is:
+These configuration options in [config.json](config.json) are required:
 
-| Variable                  | What it is                                                            |
+| Name                      | Description                                                           |
 | ------------------------- | ----------------------------------------------------------------------|
 | YOUR_BOT_PREFIX_HERE      | The prefix you want to use for normal commands                        |
 | YOUR_BOT_TOKEN_HERE       | The token of your bot                                                 |
@@ -15,36 +14,35 @@ Here is an explanation of what everything is:
 | YOUR_APPLICATION_ID_HERE  | The application ID of your bot                                        |
 | OWNERS                    | The user ID of all the bot owners                                     |
 
+## Installation
 
-## How to start
+**Using Conda (recommended):**
 
-To start the bot you simply need to launch, either your terminal (Linux, Mac, or Windows), or your Command Prompt (Windows).
-
-Before running the bot you will need to install all the requirements using conda:
+Install dependencies and create the `challenge-bot` environment:
 
 ```
 conda env create -f environment.yml
 ```
 
-Then to activate the environment:
+Then activate the environment:
 
 ```
 conda activate challenge-bot
 ```
 
-Or, install the packages via pip:
+**Using Pip**
+
+Install dependencies:
 
 ```
 python -m pip install -r requirements.txt
 ```
 
-After that you can start it with
+## Starting the server
 
 ```
 python bot.py
 ```
-
-> **Note** You may need to replace `python` with `py`, `python3`, `python3.11`, etc. depending on what Python versions you have installed on the machine.
 
 ## License
 
