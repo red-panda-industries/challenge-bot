@@ -1,6 +1,6 @@
 # Red Panda Challenge Discord Bot
 
-The **Red Panda Challenge Discord Bot**, or **`rpc-bot`** for short, is the robotic minister of the **Red Panda Challenge** (**RPC**). The good robot communicates with our plane of existence via the portal known as [Discord](https://discord.com/). The `rpc-bot` is the first robot to be minted by the emerging and powerful [Red Panda Industries](https://github.com/red-panda-industries).
+The **Red Panda Challenge Discord Bot**, or **`rpc-bot`** for short, is the robotic minister of the **Red Panda Challenge** (**RPC**). The good robot communicates with our plane of existence via the portal known as **[Discord](https://discord.com/)**. The `rpc-bot` is the first robot to be minted by the emerging and powerful **[Red Panda Industries](https://github.com/red-panda-industries)**.
 
 <figure>
   <img alt="Preacherbot from Futurama" src="images/preacherbot.png" height=200 width=200>
@@ -21,7 +21,7 @@ Currently, the `rpc-bot` has limited functionality. This project is in early sta
 
 After obtaining a copy of this repository, you must update the configuration file.
 
-If you are a contributor to this repository, unlock the encrypted configuration file with [git-crypt](https://www.agwa.name/projects/git-crypt/), using this command:
+If you are a contributor to this repository, unlock the encrypted configuration file with **[git-crypt](https://www.agwa.name/projects/git-crypt/)**, using this command:
 
 ```bash
 git-crypt unlock config.json
