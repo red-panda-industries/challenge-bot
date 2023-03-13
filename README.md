@@ -70,8 +70,9 @@ To obtain your user ID, see &ldquo;[How to find your unique Discord ID](http://w
 
 Finally, invite your bot onto your server by following this invite link in your browser (replacing `YOUR_APPLICATION_ID_HERE` with the application ID):
 
-<code>https://discord.com/oauth2/authorize?<wbr>scope=bot+applications.commands<wbr>&permissions=36574522433<wbr>&client_id=YOUR_APPLICATION_ID_HERE</a></code>
+<!-- https://discord.com/oauth2/authorize?scope=bot+applications.commands&permissions=36574522433&client_id=YOUR_APPLICATION_ID_HERE -->
 
+<code>https:<span>//</span>discord.com/oauth2/authorize?<wbr>scope=bot+applications.commands<wbr>&permissions=36574522433<wbr>&client_id=YOUR_APPLICATION_ID_HERE</code>
 
 ## Installation
 
