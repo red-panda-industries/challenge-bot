@@ -8,13 +8,12 @@ Currently, the `rpc-bot` has limited functionality. This project is in early sta
 
 ## Setting up the bot configuration
 
-After obtaining a copy of this repository, you must create a working configuration file.
+After cloning the repository, you must create a working `config.json` file.
 
-If you are an editor of this repository, unlock the existing encrypted configuration file with [git-crypt](https://www.agwa.name/projects/git-crypt/), using the command `git-crypt unlock config.json`.
+If you are an editor of this repository, unlock the encrypted file with <code>[git-crypt](https://www.agwa.name/projects/git-crypt/) unlock config.json</code>.
 
-If you are creating your own bot instance, you must delete the encrypted `config.json` file in this repository and create your own. It should look like this:
+If you are creating your own bot instance, you need to delete the encrypted `config.json` file in this repository and create your own. It should look like this:
 
-`config.json`
 ```json
 {
   "application_id": "YOUR_APPLICATION_ID_HERE",
@@ -76,15 +75,17 @@ https://discord.com/oauth2/authorize?scope=bot+applications.commands&permissions
 
 ## Installation
 
-To run the bot, you need the **Python** programming language (**version&nbsp;3.9 or later**) and a few packages.
+To run the bot, you need the **[Python](https://www.python.org/)** programming language (**version&nbsp;3.9 or later**) and a few packages.
 
-### Using Conda environment manager
+The packages can be installed through **conda** or **pip**.
 
-This is the recommended method for running this project.
+### Using Conda
 
-If the `conda` command is not available on your machine, install the **[miniconda](https://docs.conda.io/en/latest/miniconda.html)** distribution.
+This is the recommended method for running this software.
 
-Install packages and create the `challenge-bot` environment:
+If the `conda` command is not already available on your machine, install the **[miniconda](https://docs.conda.io/en/latest/miniconda.html)** distribution.
+
+To install packages and create the `challenge-bot` environment:
 
 ```bash
 conda env create -f environment.yml
@@ -96,7 +97,7 @@ Then activate the environment:
 conda activate challenge-bot
 ```
 
-### Using Pip package installer
+### Using Pip
 
 Install packages:
 
