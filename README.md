@@ -28,7 +28,7 @@ cd challenge-bot
 
 After obtaining a copy of this repository, you must set up the configuration file.
 
-If you are an `rpc-bot` admin, unlock the encrypted configuration file with **[git-crypt](https://www.agwa.name/projects/git-crypt/)**, using this command:
+If you are a member of Red Panda Industries, unlock the encrypted configuration file with **[git-crypt](https://www.agwa.name/projects/git-crypt/)**, using this command:
 
 ```bash
 git-crypt unlock config.json
@@ -126,7 +126,9 @@ The packages can be installed through the **[conda](https://docs.conda.io/en/lat
 
 We recommend using Conda to run this bot, as it allows for better control over the Python environment.
 
-If you don't already have the `conda` command on your machine, install it using **[miniconda](https://docs.conda.io/en/latest/miniconda.html)**. Conda includes its own copy or copies of Python. This is intentional, as it allows us to create clean Python environments.
+If you don't already have the `conda` command on your machine, install it using **[miniconda](https://docs.conda.io/en/latest/miniconda.html)**.
+
+Conda includes its own copy or copies of Python. This is intentional, as it allows us to create clean Python environments.
 
 To install the packages and create the `challenge-bot` environment:
 
