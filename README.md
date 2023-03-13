@@ -95,7 +95,7 @@ The packages can be installed through **[conda](https://docs.conda.io/en/latest/
 
 Conda is the recommended method for running this bot, as it allows for more control of the Python environment.
 
-If you don't already have the `conda` command on your machine, install the **[miniconda](https://docs.conda.io/en/latest/miniconda.html)** distribution. **Miniconda will install its own copy of Python.**
+If you don't already have the `conda` command on your machine, install the **[miniconda](https://docs.conda.io/en/latest/miniconda.html)** distribution. **Miniconda will install its own copy or copies of Python.** This is intentional as it allows us to create clean Python environments.
 
 To install the packages and create the `challenge-bot` environment:
 
@@ -125,9 +125,11 @@ python -m pip install -r requirements.txt
 python bot.py
 ```
 
-## License
+## Open source
 
-This project is distributed under the terms of the [Apache License, Version&nbsp;2.0](https://en.wikipedia.org/wiki/Apache_License).
+The **Red Panda Challenge Discord Bot** is distributed under the terms of the **[Apache License, Version&nbsp;2.0](https://en.wikipedia.org/wiki/Apache_License)**.
+
+This basically means that you are **free to use, modify and distribute the bot**, as long as any modifications or distributions of the software include the **original copyright notice**, and a **copy of the license**.
 
 See [LICENSE.md](LICENSE.md) for details.
 
