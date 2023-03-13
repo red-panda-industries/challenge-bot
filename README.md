@@ -4,7 +4,11 @@ The **Red Panda Challenge Discord Bot**, or **`rpc-bot`** for short, is the robo
 
 <figure>
   <img alt="Preacherbot from Futurama" src="images/preacherbot.png" height=200 width=200>
-  <figcaption><p>Figure&nbsp;1: A robotic minister</p></figcaption>
+  <figcaption>
+
+  Figure&nbsp;1: A robotic minister
+
+  </figcaption>
 </figure>
 
 ## The Red Panda Challenge
@@ -17,11 +21,21 @@ Currently, the `rpc-bot` has limited functionality. This project is in early sta
 
 After obtaining a copy of this repository, you must create a working configuration file.
 
-If you are a contributor to this repository, unlock the existing encrypted configuration file with [git-crypt](https://www.agwa.name/projects/git-crypt/), using the command `git-crypt unlock config.json`.
+If you are a contributor to this repository, unlock the existing encrypted configuration file with [git-crypt](https://www.agwa.name/projects/git-crypt/), using this command:
+
+```bash
+git-crypt unlock config.json
+```
 
 If you are creating your own bot instance, you must delete the encrypted `config.json` file in this repository and create your own. It should look like this:
 
+<figure>
+<figcaption>
+
 Figure&nbsp;2: `config.json` example
+
+</figcaption>
+
 ```json
 {
   "application_id": "YOUR_APPLICATION_ID_HERE",
@@ -36,12 +50,19 @@ Figure&nbsp;2: `config.json` example
 }
 ```
 
+</figure>
+
 To obtain values for `application_id` and `token`, you must create an **application** and a corresponding **bot** on the [Discord Developer Portal](https://discord.com/developers/applications).
 
 To obtain your user ID, see &ldquo;[How to find your unique Discord ID](http://web.archive.org/web/20230313045358/https://www.businessinsider.com/guides/tech/discord-id).&rdquo;
 
+<figure>
+<figcaption>
+
+Figure&nbsp;3: Required entries in `config.json`
+
+</figcaption>
 <table>
-  <caption>Figure&nbsp;3: Required entries in <code>config.json</code></caption>
   <thead>
     <tr>
       <th>Key name</th>
@@ -74,6 +95,7 @@ To obtain your user ID, see &ldquo;[How to find your unique Discord ID](http://w
       <td>Whether to offer slash commands globally within the server, as opposed to only for users in the same guild.</td>
   </tbody>
 </table>
+</figure>
 
 Finally, invite your bot onto your server by following this invite link in your browser (replacing `YOUR_APPLICATION_ID_HERE` with the application ID):
 
@@ -127,7 +149,7 @@ python bot.py
 
 ## Open source
 
-The **Red Panda Challenge Discord Bot** is distributed under the terms of the **[Apache License, Version&nbsp;2.0](https://en.wikipedia.org/wiki/Apache_License)**.
+The Red Panda Challenge Discord Bot is distributed under the terms of the **[Apache License, Version&nbsp;2.0](https://en.wikipedia.org/wiki/Apache_License)**.
 
 This basically means that you are **free to use, modify and distribute the bot**, as long as any modifications or distributions of the software include the **original copyright notice**, and a **copy of the license**.
 
