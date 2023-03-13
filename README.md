@@ -8,12 +8,13 @@ Currently, the `rpc-bot` has limited functionality. This project is in early sta
 
 ## Setting up the bot configuration
 
-After cloning the repository, you must create a working `config.json` file.
+After obtaining a copy of this repository, you must create a working configuration file.
 
-If you are an editor of this repository, unlock the encrypted file with <code>[git-crypt](https://www.agwa.name/projects/git-crypt/) unlock config.json</code>.
+If you are an editor of this repository, unlock the existing encrypted configuration file with [git-crypt](https://www.agwa.name/projects/git-crypt/), using the command `git-crypt unlock config.json`.
 
-If you are creating your own bot instance, you need to delete the encrypted `config.json` file in this repository and create your own. It should look like this:
+If you are creating your own bot instance, you must delete the encrypted `config.json` file in this repository and create your own. It should look like this:
 
+`config.json`
 ```json
 {
   "application_id": "YOUR_APPLICATION_ID_HERE",
@@ -69,23 +70,22 @@ To obtain your user ID, see &ldquo;[How to find your unique Discord ID](http://w
 
 Finally, invite your bot onto your server by following this invite link in your browser (replacing `YOUR_APPLICATION_ID_HERE` with the application ID):
 
-```
-https://discord.com/oauth2/authorize?scope=bot+applications.commands&permissions=36574522433&client_id=YOUR_APPLICATION_ID_HERE
-```
+<code><a href="https://discord.com/oauth2/authorize?scope=bot+applications.commands&permissions=36574522433&client_id=YOUR_APPLICATION_ID_HERE">https://discord.com/oauth2/authorize?<wbr>scope=bot+applications.commands<wbr>&permissions=36574522433<wbr>&client_id=YOUR_APPLICATION_ID_HERE</a></code>
+
 
 ## Installation
 
 To run the bot, you need the **[Python](https://www.python.org/)** programming language (**version&nbsp;3.9 or later**) and a few packages.
 
-The packages can be installed through **conda** or **pip**.
+The packages can be installed through **[conda](https://docs.conda.io/en/latest/)** or **[pip](https://pypi.org/project/pip/)**.
 
 ### Using Conda
 
-This is the recommended method for running this software.
+Conda is the recommended method for running this software.
 
 If the `conda` command is not already available on your machine, install the **[miniconda](https://docs.conda.io/en/latest/miniconda.html)** distribution.
 
-To install packages and create the `challenge-bot` environment:
+To install the packages and create the `challenge-bot` environment:
 
 ```bash
 conda env create -f environment.yml
