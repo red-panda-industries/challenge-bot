@@ -24,7 +24,7 @@ If you are creating your own bot instance, you must delete the encrypted `config
 <figure>
 <figcaption>
 
-Figure&nbsp;2: `config.json` example
+Figure: `config.json` example
 
 </figcaption>
 
@@ -53,7 +53,7 @@ To get your user ID, for `owners`, see &ldquo;[How to find your unique Discord I
 <figure>
 <figcaption>
 
-Figure&nbsp;3: Required entries in `config.json`
+Figure: Required entries in `config.json`
 
 </figcaption>
 <dl>
