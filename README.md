@@ -17,6 +17,17 @@ The **Red Panda Challenge** (**RPC**) is a daily exercise challenge with multipl
 
 Currently, the `rpc-bot` has limited functionality. This project is in early stages of development.
 
+## Available commands
+
+| Command | Description |
+| --- | --- |
+| `/help` | List available commands. |
+| `/randomfact` | Get a random fact. |
+| `/coinflip` | Make a coin flip, but give your bet before. |
+| `/rps` | Play the rock paper scissors game against the bot. |
+| `/ping` | Check if the bot is alive. |
+| `/botinfo` | Get some information about the bot. |
+
 ## Setting up the bot
 
 To run the bot yourself, first download or clone this repository.
@@ -28,7 +39,7 @@ cd challenge-bot
 
 After obtaining a copy of this repository, you must set up the configuration file.
 
-If you are an `rpc-bot` admin, unlock the encrypted configuration file with **[git-crypt](https://www.agwa.name/projects/git-crypt/)**, using this command:
+If you are a member of Red Panda Industries, unlock the encrypted configuration file with **[git-crypt](https://www.agwa.name/projects/git-crypt/)**, using this command:
 
 ```bash
 git-crypt unlock config.json
@@ -59,7 +70,7 @@ Figure&nbsp;2: `config.json` example
 
 </figure>
 
-**Note: Never publish your `config.json` file or any secrets unencrypted.**
+**Note: Never publish your unencrypted `config.json` file or any secrets anywhere public.**
 
 To obtain values for `application_id` and `token`, you must create an **application** and a corresponding **bot** on the [Discord Developer Portal](https://discord.com/developers/applications).
 
@@ -126,15 +137,17 @@ The packages can be installed through the **[conda](https://docs.conda.io/en/lat
 
 We recommend using Conda to run this bot, as it allows for better control over the Python environment.
 
-If you don't already have the `conda` command on your machine, install it using **[miniconda](https://docs.conda.io/en/latest/miniconda.html)**. Conda includes its own copy or copies of Python. This is intentional, as it allows us to create clean Python environments.
+If you don't already have the `conda` command on your machine, install it using **[Miniconda](https://docs.conda.io/en/latest/miniconda.html)**.
 
-To install the packages and create the `challenge-bot` environment:
+The Miniconda installer includes its own copy of Python, and Conda may download additional versions of Python. This is intentional, as it allows us to create clean Python environments.
+
+To install the packages and create the `challenge-bot` environment, run:
 
 ```bash
 conda env create -f environment.yml
 ```
 
-You must activate the environment before starting the bot:
+You must activate the environment before starting the bot, like:
 
 ```bash
 conda activate challenge-bot
