@@ -1,15 +1,15 @@
-# Installing the Red Panda Challenge Bot|
+# Installing the Red Panda Challenge Bot
 
-## Get a copy and set up the config
+## Clone and set up the config
 
-To run the bot yourself, first download or clone this repository.
+To run the bot yourself, first clone this repository.
 
 ```bash
 git clone git@github.com:red-panda-industries/challenge-bot.git
 cd challenge-bot
 ```
 
-After obtaining a copy of this project, you must set up the configuration file.
+After cloning, you must set up the configuration file.
 
 The configuration file in this repository, `config.json`, is encrypted.
 
@@ -46,7 +46,7 @@ Figure&nbsp;2: `config.json` example
 
 **Note: Never publish your unencrypted `config.json` file or any secrets anywhere public.**
 
-To get your `application_id` and `token`, you must create an **application** and a corresponding **bot** on the [Discord Developer Portal](https://discord.com/developers/applications).
+To get your `application_id` and `token`, you must create an **application** and a corresponding **bot** on the **[Discord Developer Portal](https://discord.com/developers/applications)**.
 
 To get your user ID, for `owners`, see &ldquo;[How to find your unique Discord ID](http://web.archive.org/web/20230313045358/https://www.businessinsider.com/guides/tech/discord-id).&rdquo;
 
@@ -57,23 +57,18 @@ Figure&nbsp;3: Required entries in `config.json`
 
 </figcaption>
 <dl>
-    <dt><code>application_id</code></dt>
-    <dd>The application ID of your bot.</dd>
-
-    <dt><code>token</code></dt>
-    <dd>The token of your bot.</dd>
-
-    <dt><code>owners</code></dt>
-    <dd>The Discord user IDs of all the bot owners.</dd>
-
-    <dt><code>prefix</code></dt>
-    <dd>The prefix you want to use for normal commands (including an optional trailing space).</dd>
-
-    <dt><code>permissions</code></dt>
-    <dd>Represents the permissions needed by the bot, which in this case, is <code>"36574522433"</code>. See <a href="https://discordapi.com/permissions.html">Discord Permissions Calculator</a>.</dd>
-
-    <dt><code>sync_commands_globally</code></dt>
-    <dd>Whether to offer slash commands globally within the server, as opposed to only for users in the same guild.</dd>
+<dt><code>application_id</code></dt>
+<dd>The application ID of your bot.</dd>
+<dt><code>token</code></dt>
+<dd>The token of your bot.</dd>
+<dt><code>owners</code></dt>
+<dd>The Discord user IDs of all the bot owners.</dd>
+<dt><code>prefix</code></dt>
+<dd>The prefix you want to use for normal commands (including an optional trailing space).</dd>
+<dt><code>permissions</code></dt>
+<dd>Represents the permissions needed by the bot, which in this case, is <code>"36574522433"</code>. See <a href="https://discordapi.com/permissions.html">Discord Permissions Calculator</a>.</dd>
+<dt><code>sync_commands_globally</code></dt>
+<dd>Whether to offer slash commands globally within the server, as opposed to only for users in the same guild.</dd>
 </dl>
 </figure>
 
