@@ -19,155 +19,72 @@ Currently, the `rpc-bot` has limited functionality. This project is in early sta
 
 ## Available commands
 
-| Command | Description |
-| --- | --- |
-| `/help` | List available commands. |
-| `/randomfact` | Get a random fact. |
-| `/coinflip` | Make a coin flip, but give your bet before. |
-| `/rps` | Play the rock paper scissors game against the bot. |
-| `/ping` | Check if the bot is alive. |
-| `/botinfo` | Get some information about the bot. |
+<dl>
+<dt>
 
-## Setting up the bot
+`/help`
 
-To run the bot yourself, first download or clone this repository.
+</dt>
+<dd>
 
-```bash
-git clone git@github.com:red-panda-industries/challenge-bot.git
-cd challenge-bot
-```
+List available commands.
 
-After obtaining a copy of this repository, you must set up the configuration file.
+</dd>
+<dt>
 
-If you are a member of Red Panda Industries, unlock the encrypted configuration file with **[git-crypt](https://www.agwa.name/projects/git-crypt/)**, using this command:
+`/randomfact`
 
-```bash
-git-crypt unlock config.json
-```
+</dt>
+<dd>
 
-If you are creating your own bot instance, you must delete the encrypted `config.json` and create your own. It should look like this:
+Get a random fact.
 
-<figure>
-<figcaption>
+</dd>
+<dt>
 
-Figure&nbsp;2: `config.json` example
+`/coinflip`
 
-</figcaption>
+</dt>
+<dd>
 
-```json
-{
-  "application_id": "YOUR_APPLICATION_ID_HERE",
-  "token": "YOUR_BOT_TOKEN_HERE",
-  "owners": [
-    111111,
-    2222222333445
-  ],
-  "prefix": "!rpc ",
-  "permissions": "36574522433",
-  "sync_commands_globally": true,
-}
-```
+Make a coin flip, but give your bet before.
 
-</figure>
+</dd>
+<dt>
 
-**Note: Never publish your unencrypted `config.json` file or any secrets anywhere public.**
+`/rps`
 
-To obtain values for `application_id` and `token`, you must create an **application** and a corresponding **bot** on the [Discord Developer Portal](https://discord.com/developers/applications).
+</dt>
+<dd>
 
-To obtain your user ID, see &ldquo;[How to find your unique Discord ID](http://web.archive.org/web/20230313045358/https://www.businessinsider.com/guides/tech/discord-id).&rdquo;
+Play the rock paper scissors game against the bot.
 
-<figure>
-<figcaption>
+</dd>
+<dt>
 
-Figure&nbsp;3: Required entries in `config.json`
+`/ping`
 
-</figcaption>
-<table>
-  <thead>
-    <tr>
-      <th>Key name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>application_id</code></td>
-      <td>The application ID of your bot.</td>
-    </tr>
-    <tr>
-      <td><code>token</code></td>
-      <td>The token of your bot.</td>
-    </tr>
-    <tr>
-      <td><code>owners</code></td>
-      <td>The Discord user IDs of all the bot owners.</td>
-    </tr>
-    <tr>
-      <td><code>prefix</code></td>
-      <td>The prefix you want to use for normal commands (including an optional trailing space).</td>
-    </tr>
-    <tr>
-      <td><code>permissions</code></td>
-      <td>Represents the permissions needed by the bot, which in this case, is <code>"36574522433"</code>. See <a href="https://discordapi.com/permissions.html">Discord Permissions Calculator</a>.</td>
-    </tr>
-    <tr>
-      <td><code>sync_commands_globally</code></td>
-      <td>Whether to offer slash commands globally within the server, as opposed to only for users in the same guild.</td>
-  </tbody>
-</table>
-</figure>
+</dt>
+<dd>
 
-Finally, invite your bot onto your server by following this invite link in your browser (replacing `YOUR_APPLICATION_ID_HERE` with the application ID):
+Check if the bot is alive.
 
-<!-- https://discord.com/oauth2/authorize?scope=bot+applications.commands&permissions=36574522433&client_id=YOUR_APPLICATION_ID_HERE -->
+</dd>
+<dt>
 
-<figure>
-<code>https:<span>//</span>discord.com/oauth2/authorize<wbr>?scope=bot+applications.commands<wbr>&permissions=36574522433<wbr>&client_id=YOUR_APPLICATION_ID_HERE</strong></code>
-</figure>
+`/botinfo`
+
+</dt>
+<dd>
+
+Get some information about the bot.
+
+</dd>
+</dl>
 
 ## Installation
 
-To run the bot, you need **[Python](https://www.python.org/)** and a few packages.
-
-Python versions **3.10 and&nbsp;greater** are supported.
-
-The packages can be installed through the **[conda](https://docs.conda.io/en/latest/)** environment manager or the **[pip](https://pypi.org/project/pip/)** package manager that comes pre-installed with Python.
-
-### Using Conda
-
-We recommend using Conda to run this bot, as it allows for better control over the Python environment.
-
-If you don't already have the `conda` command on your machine, install it using **[Miniconda](https://docs.conda.io/en/latest/miniconda.html)**.
-
-The Miniconda installer includes its own copy of Python, and Conda may download additional versions of Python. This is intentional, as it allows us to create clean Python environments.
-
-To install the packages and create the `challenge-bot` environment, run:
-
-```bash
-conda env create -f environment.yml
-```
-
-You must activate the environment before starting the bot, like:
-
-```bash
-conda activate challenge-bot
-```
-
-Activating the environment ensures that the correct versions of Python and other packages are installed and selected for use.
-
-### Using Pip
-
-Install the packages:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-## Starting the bot
-
-```bash
-python bot.py
-```
+See **[INSTALL.md](INSTALL.md)** for instructions on running your own bot.
 
 ## Open source
 
