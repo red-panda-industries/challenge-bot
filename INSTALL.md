@@ -1,25 +1,25 @@
 # Installing the Red Panda Challenge Bot
 
-## Cloning and setting up the config
+## Clone the repository
 
-To run the bot yourself, first clone this repository.
 
 ```bash
 git clone git@github.com:red-panda-industries/challenge-bot.git
 cd challenge-bot
 ```
 
-After cloning, you must set up the configuration file.
+## Set up the config file
+
 
 The configuration file in this repository, `config.json`, is encrypted.
 
-If you are a member of Red Panda Industries, unlock the file with **[git-crypt](https://www.agwa.name/projects/git-crypt/)**, using this command:
+If you are a member of Red Panda Industries, unlock the file with **[git-crypt](https://www.agwa.name/projects/git-crypt/)**:
 
 ```bash
 git-crypt unlock
 ```
 
-If you are creating your own bot instance, you must delete the encrypted `config.json` and create your own. It should look like this:
+If you are creating your own bot instance, you must delete the encrypted `config.json` (and `.git-crypt` directory) and create your own. It should look like this:
 
 <figure>
 <figcaption>
@@ -44,11 +44,11 @@ Figure: `config.json` example
 
 </figure>
 
-**Note: Never publish your unencrypted `config.json` file or any secrets anywhere public.**
+**Note: Never publish your `config.json` file (unencrypted), or generally any secrets.**
 
 To get your `application_id` and `token`, you must create an **application** and a corresponding **bot** on the **[Discord Developer Portal](https://discord.com/developers/applications)**.
 
-To get your user ID, for `owners`, see &ldquo;[How to find your unique Discord ID](http://web.archive.org/web/20230313045358/https://www.businessinsider.com/guides/tech/discord-id).&rdquo;
+To get your user ID, for the `owners` parameter, see &ldquo;[How to find your unique Discord ID](http://web.archive.org/web/20230313045358/https://www.businessinsider.com/guides/tech/discord-id).&rdquo;
 
 <figure>
 <figcaption>
@@ -80,7 +80,7 @@ Finally, invite your bot onto your server by following this invite link in your 
 <code>https:<span>//</span>discord.com/oauth2/authorize<wbr>?scope=bot+applications.commands<wbr>&permissions=36574522433<wbr>&client_id=YOUR_APPLICATION_ID_HERE</strong></code>
 </figure>
 
-## Installing dependencies
+## Install dependencies
 
 To run the bot, you need **[Python](https://www.python.org/)** and a few packages.
 
