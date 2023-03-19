@@ -1,6 +1,6 @@
 # Installing the Red Panda Challenge Bot
 
-## Clone and set up the config
+## Cloning and setting up the config
 
 To run the bot yourself, first clone this repository.
 
@@ -80,7 +80,7 @@ Finally, invite your bot onto your server by following this invite link in your 
 <code>https:<span>//</span>discord.com/oauth2/authorize<wbr>?scope=bot+applications.commands<wbr>&permissions=36574522433<wbr>&client_id=YOUR_APPLICATION_ID_HERE</strong></code>
 </figure>
 
-## Dependencies
+## Installing dependencies
 
 To run the bot, you need **[Python](https://www.python.org/)** and a few packages.
 
