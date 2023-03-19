@@ -19,14 +19,68 @@ Currently, the `rpc-bot` has limited functionality. This project is in early sta
 
 ## Available commands
 
-| Command | Description |
-| --- | --- |
-| `/help` | List available commands. |
-| `/randomfact` | Get a random fact. |
-| `/coinflip` | Make a coin flip, but give your bet before. |
-| `/rps` | Play the rock paper scissors game against the bot. |
-| `/ping` | Check if the bot is alive. |
-| `/botinfo` | Get some information about the bot. |
+<dl>
+<dt>
+
+`/help`
+
+</dt>
+<dd>
+
+List available commands.
+
+</dd>
+<dt>
+
+`/randomfact`
+
+</dt>
+<dd>
+
+Get a random fact.
+
+</dd>
+<dt>
+
+`/coinflip`
+
+</dt>
+<dd>
+
+Make a coin flip, but give your bet before.
+
+</dd>
+<dt>
+
+`/rps`
+
+</dt>
+<dd>
+
+Play the rock paper scissors game against the bot.
+
+</dd>
+<dt>
+
+`/ping`
+
+</dt>
+<dd>
+
+Check if the bot is alive.
+
+</dd>
+<dt>
+
+`/botinfo`
+
+</dt>
+<dd>
+
+Get some information about the bot.
+
+</dd>
+</dl>
 
 ## Installation
 
