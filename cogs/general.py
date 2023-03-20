@@ -59,11 +59,11 @@ class General(commands.Cog, name="general"):
             description="Used [Krypton's](https://krypton.ninja) template",
             color=0x9C84EF,
         )
-        embed.set_author(name="Bot Information")
-        embed.add_field(name="Owner:", value="Krypton#7331", inline=True)
-        embed.add_field(
-            name="Python Version:", value=f"{platform.python_version()}", inline=True
-        )
+        embed.set_author(name="RPC Information")
+        embed.add_field(name="Owners:", value="rocksteady5446#1541\nmultiusersystem" , inline=True)
+        # embed.add_field(
+        #     name="Python Version:", value=f"{platform.python_version()}", inline=True
+        # )
         embed.add_field(
             name="Prefix:",
             value=f"/ (Slash Commands) or {self.bot.config['prefix']} for normal commands",
