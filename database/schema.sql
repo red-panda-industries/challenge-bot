@@ -13,13 +13,12 @@ CREATE TABLE IF NOT EXISTS `warns` (
 );
 
 CREATE TABLE IF NOT EXISTS `activity` (
-  `id` int(11) NOT NULL
-    CONSTRAINT activity_pk PRIMARY KEY AUTOINCREMENT,
-  `user_id` varchar(20) NOT NULL
-    INDEX activity_user_id_idx,
-  `type` varchar(20) NOT NULL
-    INDEX activity_type_idx,
-  `created_at` timestamp NOT NULL
-    INDEX activity_created_at_idx
-    DEFAULT CURRENT_TIMESTAMP
+  `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  `user_id` varchar(20) NOT NULL,
+  `type` varchar(20) NOT NULl,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE INDEX activity_user_id_index ON activity(user_id);
+CREATE INDEX activity_type_index ON activity(type);
+CREATE INDEX activity_created_at_index ON activity(created_at);
