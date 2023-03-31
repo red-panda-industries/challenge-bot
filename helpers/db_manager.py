@@ -157,3 +157,41 @@ async def get_warnings(user_id: int, server_id: int) -> list:
             for row in result:
                 result_list.append(row)
             return result_list
+
+async def add_activity(user_id: int, activity_type: str) -> None:
+    """
+    This function will add an activity to the database.
+
+    :param user_id: The ID of the user that should be added.
+    :param activity_type: The type of the activity.
+    """
+    async with aiosqlite.connect(DATABASE_PATH) as db:
+        await db.execute(
+            "INSERT INTO activity(user_id, activity_type) VALUES (?, ?)",
+            (
+                user_id,
+                activity_type,
+            ),
+        )
+        await db.commit()
+
+async def get_activities_for_user(user_id: int) -> list:
+    """
+    This function will get all the activities of a user.
+
+    :param user_id: The ID of the user that should be checked.
+    :return: A list of all the activities of the user.
+    """
+    async with aiosqlite.connect(DATABASE_PATH) as db:
+        rows = await db.execute(
+            "SELECT user_id, activity_type, strftime('%s', created_at) FROM activity WHERE user_id=?",
+            (
+                user_id,
+            ),
+        )
+        async with rows as cursor:
+            result = await cursor.fetchall()
+            result_list = []
+            for row in result:
+                result_list.append(row)
+            return result_list
