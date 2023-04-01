@@ -4,6 +4,6 @@ channels:
   - defaults
 dependencies:
   - python=3.10
-  - discord.py
-  - aiosqlite
-  - aiohttp
+  - aiohttp=3.8.4
+  - aiosqlite=0.18.0
+  - discord.py=2.2.2
